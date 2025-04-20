@@ -4,8 +4,9 @@ import subprocess as s
 video_path = 'video4.mp4'
 camera = cv.VideoCapture(video_path)
 stream_id = 'dummy'
+ip_address = '<YOUR IP ADDRESS>'
 
-rtsp_url = f'rtsp://10.157.147.69:8554/{stream_id}'
+rtsp_url = f'rtsp://{ip_address}:8554/{stream_id}'
 width = 640
 height = 640
 fps = 30
